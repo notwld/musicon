@@ -13,7 +13,7 @@ body{
 
 }
 .side-bar{
-    width: 14rem;
+    width: 15rem;
     background-color: #f5f5f6;
     height: fit-content;
     flex-shrink: 0;
@@ -144,7 +144,7 @@ footer p{
     display: flex;
     flex-direction: row;
     width: 100%;
-    padding: 1em 2rem 1rem 16rem;
+    padding: 1em 2rem 1rem 17rem;
     border-bottom: 1px solid #e5e5e5;
     background-color: white;
     position: sticky;
@@ -164,7 +164,7 @@ footer p{
     margin: 0px 7px;
 }
 .nav__container form input{
-    border: 1px solid #e5e5e5;
+    border: none;
     border-radius: 0.5rem;
     outline: 0 !important;
     box-shadow: none !important;
@@ -174,7 +174,8 @@ footer p{
     width: 450px;
     height: 1.5rem;
     padding: 1rem 2.5rem;
-    background-color: transparent !important;
+    background-color: #f5f5f6;
+
 }
 [type="search"] {
     outline-offset: -2px;
@@ -186,14 +187,132 @@ footer p{
     padding-left:9px;
     font-size: 11px;
 }
-.section__container{
+.featured__container{
     padding: 1em 2rem 1rem 16rem;
+    margin-bottom: 10rem;
 }
-.section__container__content{
-    padding: 0.5em 0 1.5em 1em;
-}
-.section__container__content h2{
+.featured__container h2{
     font-weight: 500;
     font-size: 1.2em;
-    padding-bottom: 1.5em;
+    padding: 0.5em 0 0em 1em;
+}
+.featured__container__content{
+    padding: 0.5em 0em 1.5em 1.2em;
+}
+.featured__card__header{
+    padding: 0.5rem 0;
+}
+.featured__card__header h1{
+    font-weight: 400;
+    font-size: 1.05rem;
+}
+.featured__card__header h3{
+    font-weight: 400;
+    font-size: .8125rem;
+    color: #888;
+}
+
+.featuerd__card__body img{
+    width: 350px;
+    aspect-ratio: auto 300 / 300;
+    height: 250px;
+    border-radius: 7px;
+    position: absolute;
+    object-fit: cover;
+}
+section{
+    height:60vh;
+}
+.feartured__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 17rem;
+    grid-column-gap: 10rem;
+    padding: 0.5rem 0;
+}
+.album__container{
+    padding: 3.5em 2rem 1rem 16rem;
+}
+.album__container h2{
+    font-weight: 500;
+    font-size: 1.2em;
+    padding: 0.5em 0 0em 1em;
+}
+.album__card{
+    width: 100%;
+}
+.album__container__content{
+    padding: 0.5em 0em 1.5em 1.2em;
+}
+.album__card__footer{
+    padding: 1rem 0;
+}
+.album__card__footer h1{
+    font-weight: 400;
+    font-size: 1.05rem;
+}
+.album__card__footer h3{
+    font-weight: 400;
+    font-size: .8125rem;
+    color: #888;
+}
+
+.album__card__body img{
+    width: 220px;
+    aspect-ratio: auto 300 / 300;
+    height: 200px;
+    border-radius: 7px;
+    position: absolute;
+    object-fit: cover;
+}
+.album__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0rem;
+    padding: 0.5rem 0;
+}
+
+.recommendation_container{
+    padding: 1em 2rem 1rem 16rem;
+    margin-bottom: 10rem;
+}
+.recommendation_container h1{
+    font-weight: 500;
+    font-size: 1.2em;
+    padding: 0.5em 0 0em 1em;
+}
+.tracks{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 1.2em;
+}
+
+.track{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+.track__info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+.track__info img{
+    width: 50px;
+    height: 50px;
+    border-radius:8px;
+    margin-right: 1rem;
+}
+.track__info h3{
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: #888;
+}
+.track__info h4{
+    font-weight: 400;
+    font-size: 1.05rem;
 }
